@@ -6,6 +6,8 @@ Adding a self-hosted runner requires that you download, configure, and execute t
 
 We recommend configuring the runner under `C:\actions-runner`. This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.
 
+__NOTE:__ Run commands below as Administrator.
+
 ```
 # Create a folder under the drive root
 $ mkdir actions-runner; cd actions-runner
