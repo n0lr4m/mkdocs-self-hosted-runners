@@ -1,3 +1,6 @@
 site_name: MKDocs Self Hosted Runner
+nav:
+    - Home: index.md
+    - Self-Hosted: self-hosted.md
 theme:
   name: material
