@@ -17,8 +17,6 @@ $ Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.
 $ Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.278.0.zip", "$PWD")
 ```
 
-```
-# Open Services using shortcut __Windows + R__ then on run dialog type *services.msc* locate __GitHub Actions Runner__ open proprierties tem go to Logon tab and select __Local System account__ click OK and restart de service.
 
 ## Configure
 
@@ -28,6 +26,10 @@ $ ./config.cmd --url https://github.com/n0lr4m/mkdocs-self-hosted-runners --toke
 # Run it!
 $ ./run.cmd
 ```
+
+
+### Windows Service 
+Open Services using shortcut __Windows + R__ then on run dialog type *services.msc* locate __GitHub Actions Runner__ open proprierties tem go to Logon tab and select __Local System account__ click OK and restart de service.
 
 ## Using your self-hosted runner
 
